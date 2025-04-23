@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Las notas</title>
+    </head>
+    <body>
+        <h1>Hola mundo!</h1>
+        <script>
+            async function notas(raw) {
+                let consulta = await fetch(raw);
+                let data = await consulta.json();
+                console.log(data);
+            }
+            notas("https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-08/notas.json").catch((error) => console.error(error));
+        </script>
+    </body>
+</html>
+
