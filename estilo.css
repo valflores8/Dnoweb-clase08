@@ -6,8 +6,21 @@ body {
 
 div.container {
 	width: min(800px, 90%);
-	margin: 0auto;
+	margin: 0 auto;
 	padding: 1rem;
-	background: rgba(255, 235, 235, 0.9);
+	background: rgba(235, 215, 225, 0.9);
 	text-align: left;
 }
+
+table, th, td{ 
+ 	font-size:100%; 
+ 	border-bottom: 2px solid black; 
+ 	border-collapse: collapse; 
+ }
+table{ margin-bottom: 0.6rem; }
+th, td{ padding:0.3rem; }
+
+td:nth-child(1){ width:20%; text-align: center}
+td:nth-child(2){ width:60%; }
+td:nth-child(3){ width:20%; text-align: center}
+
