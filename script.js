@@ -22,7 +22,7 @@
                 let data = await consulta.json();
                 console.log(data);
                 data.forEach((d) => {
-                    filas.innerHTML += `<tr> <td>${carita(d.nota)}</td> <td>${d.nombre}</td><td>${d.nota}</td>  </tr>`;
+                    filas.innerHTML += `<tr> <td>${carita(d.nota)}</td> <td>${d.nombre}</td><td>${(d.nota).toFixed(1)}</td>  </tr>`;
                     total = total + d.nota;
                 });
                 texto.innerHTML = (total / 12).toFixed(1);
