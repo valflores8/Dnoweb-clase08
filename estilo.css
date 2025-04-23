@@ -19,6 +19,12 @@ div.container {
 	text-align: left;
 }
 
+h1{
+	font-weight: lighter;
+	font-size: calc(2rem + 3vw);
+	margin: 0;
+}
+
 table, th, td{ 
  	font-size:100%; 
  	border-bottom: 2px solid black; 
