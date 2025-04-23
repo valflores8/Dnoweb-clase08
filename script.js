@@ -1,21 +1,26 @@
+const filas = document.querySelector("tbody");
+const texto = document.querySelector("#promedio");
+var total = 0;
+function carita(nota) {
+    var emoji;
+      if (nota > 5.9) {
+      	emoji = "😃";
+    } else if (nota == 5.9) {
+    	emoji = "😐";
+    } else if (nota <= 4) {
+    	emoji = "😭";
+    } else {
+    	emoji = "🙁";
+    }
+    return emoji;
+    // if (nota > 5.9) {  return "😃" } else
+	}
 
-            const filas = document.querySelector("tbody");
-            const texto = document.querySelector("#promedio");
-            var total = 0;
-            function carita(nota) {
-                var emoji;
-                if (nota > 5.9) {
-                    emoji = "😃";
-                } else if (nota == 5.9) {
-                    emoji = "😐";
-                } else if (nota <= 4) {
-                    emoji = "😭";
-                } else {
-                    emoji = "🙁";
-                }
-                return emoji;
-                // if (nota > 5.9) {  return "😃" } else
-            }
+//function.barrita (n){ 	let ancho = n=10; 	let mono = `<svg xmls` }
+
+	// viewbox {0 0 70 10}
+
+
 
             async function notas() {
                 let consulta = await fetch("https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-08/notas.json");
