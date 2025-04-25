@@ -31,7 +31,7 @@ async function notas() {
         <td>
             <svg width="280" height="30"> 
             <rect x="0" y="0" width="280" height="30" fill="lightyellow"> </rect>
-            <rect x="0" y="0" width="${barrita(d.nota)}" height="30" fill="purple"> </rect>
+            <rect x="0" y="0" width="${barrita(d.nota)}" height="30" fill="#5b1868"> </rect>
                 <text x="10%" y="70%" fill="white" font-weight="700">
                 ${(d.nota).toFixed(1)} </text>
             <line x1="${5.9*40}" y1="0" x2="${5.9*40}" y2="30" stroke="#ffa000" stroke-width="2"></line>
