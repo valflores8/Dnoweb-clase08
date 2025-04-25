@@ -1,3 +1,4 @@
+
 const filas = document.querySelector("tbody");
 const texto = document.querySelector("#promedio");
 var total = 0;
