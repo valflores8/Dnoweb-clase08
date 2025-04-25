@@ -14,6 +14,7 @@ function carita(nota) {
     }
     return emoji;
     }
+
 // if (nota > 5.9) {  return "😃" } else
 
 function barrita(n){  let width= n*40;  return width;   }
