@@ -56,3 +56,4 @@ notas().catch((error) => console.error(error));
 
 //x="10%" y="50%" 
 //<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 20"> <rect x="0" y="0" width="${barrita(d.nota)}" height="20" fill="blue"></rect> <text x="20%" y="60%" fill="black"> ${d.nota} </text> </svg>
+
