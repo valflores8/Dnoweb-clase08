@@ -16,7 +16,7 @@ function carita(nota) {
     // if (nota > 5.9) {  return "😃" } else
 	}
 
-function barrita(n){  let width= n*30;  return width;   }
+function barrita(n){  let width= n*40;  return width;   }
 
 //let mono = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 10">` }
 
@@ -32,11 +32,13 @@ async function notas() {
         <td>${carita(d.nota)}</td>
         <td>${d.nombre}</td> 
         <td>
-            <svg width="210" height="30"> 
-            <rect x="0" y="0" width="210" height="30" fill="lightyellow"> </rect>
+            <svg width="280" height="30"> 
+            <rect x="0" y="0" width="280" height="30" fill="lightyellow"> </rect>
             <rect x="0" y="0" width="${barrita(d.nota)}" height="30" fill="purple"> </rect>
                 <text x="10%" y="70%" fill="white" font-weight="700">
                 ${(d.nota).toFixed(1)} </text>
+        <line x1="${5.9*40}" y1="0" x2="${5.9*40}" y2="40" stroke="orange" stroke-width="2"></line>
+        <line x1="${4*40}" y1="0" x2="${4*40}" y2="40" stroke="red" stroke-width="2"></line>
             </svg>
 
         </td>
